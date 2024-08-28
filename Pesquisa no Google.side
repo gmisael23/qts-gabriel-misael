@@ -1,0 +1,61 @@
+{
+  "id": "ea83706c-3e9b-42c3-a396-1a90d959e315",
+  "version": "2.0",
+  "name": "Pesquisa no Google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "befb4be6-c89e-4bef-8c1d-fd41ab847f8b",
+    "name": "Pesquisa com sucesso",
+    "commands": [{
+      "id": "decb4017-9747-4849-ba15-986ba1f395cd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75099ce5-7538-4a9b-ac22-1a862446d901",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f09395b6-8346-4f31-811f-26470c166974",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae6e836a-9acf-4ea4-afc6-03bf50b1de74",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Etec Camargo Aranha"
+    }]
+  }],
+  "suites": [{
+    "id": "1bceb34e-a066-41e3-9ac6-cc8b024208d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["befb4be6-c89e-4bef-8c1d-fd41ab847f8b"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
